@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
-               // "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                 "junit:target/junit/junit-report.xml,"
         },
                 features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
